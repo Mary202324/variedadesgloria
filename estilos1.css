@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+}
+
+.container {
+    padding: 0;
+}
+
+
+.barra { 
+    background-color: rgb(173, 201, 235);
+}
+
+@media(mid-width:992px)
+{ 
+    .carousel .carousel-item img { 
+        max-height: 80vh;
+   
+    }
+}
+
+
+.carousel-caption h3 {
+    font-size: 2.9rem;
+   
+   
+}
+
+.bloque-info p {
+    font-size: 1.4rem;
+}
+
+.btn-success {
+    font-size: 1.2rem !important;
+
+    background-color: #1a903d;
+    width: 200px;
+    height: auto;
+    padding: 1rem;
+}
