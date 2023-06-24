@@ -1,0 +1,124 @@
+    /*
+        
+        Arial
+        Helvetica
+        Time New Roman
+        Georgia
+        Verdana
+        
+        */
+
+        :root {
+            font-size: 24px;
+    
+            --fondo-primario: #DC8821;
+            --color-borde: #F2C94C;
+            --texto-primario: #212121;
+            --linear-1: #e4bcd4;
+            --linear-2: #e0f2a5;
+            --fuente-principal: "Arial", sans-serif;
+        }
+    
+    
+    
+        body {
+            background: linear-gradient(to top, var(--linear-1), var(--linear-2)) no-repeat center;
+
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .contenedor {
+            height: 40vh; /*modifica el tamaño del cuadro donde esta el logo al igual que width*/
+            width: 50%;
+            margin: 0 auto;
+
+            background-color: rgb(255, 240, 250);/*aliceblue es blanco*/
+            color: white;
+
+            /* columnas y filas */
+
+            display: grid;
+            grid: 100px auto 100px / repeat(1 , 50%) ; /*  grid: 100px auto 100px / repeat(4 , 25%) ; */
+            gap: 20px 80px;
+            
+            grid-template-areas: 
+                "siderbar siderbar principal header"
+                "siderbar siderbar principal header"
+                "footer footer footer header"
+            ;
+        }
+
+        @media (max-width: 720px)
+        {
+            .contenedor {                
+                grid-template-areas: 
+                "header header header header"
+                "principal principal principal principal"
+                "siderbar siderbar siderbar siderbar"
+                "footer footer footer footer"
+            ;
+            }
+        }
+
+
+        .header {
+            grid-area: header;
+            background-color: #DC8821;
+
+        }
+     
+        .contenido-principal {
+            grid-area: principal;
+            background-color:  #f1f8f5;/*blanco*/
+        }
+        .siderbar{
+            grid-area: siderbar;
+            background-color: blueviolet;
+        }
+
+        @media (max-width:600px) {
+          
+     
+        }
+
+        .footer{
+            grid-area: footer;
+            background-color: burlywood;
+        }
+        
+/*imagen*/
+#imagen {
+    width: 30px;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+
+
+ }
+
+ #imagen img{
+    width: 500px;
+    height: 100%;
+    overflow: hidden;
+   transition: 2s;
+
+ }
+
+
+ #imagen img:hover{
+    transform: translateX(-30%);
+    filter: brightness(80%);
+
+
+ }
