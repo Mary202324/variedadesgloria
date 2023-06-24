@@ -1,0 +1,179 @@
+/* restablecer estilos predeterminados */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background: linear-gradient(to top, #1976d2, #ddb7d1 );
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: #1976d2;
+}
+
+nav ul li {
+    padding: 1rem;
+}
+
+nav ul li:hover {
+    background-color: rgb(26, 184, 152);
+    cursor: pointer;
+}
+
+/* agregando etilos a los elementos */
+
+.header {
+    height: 88vh;
+    width: 100%;
+    background: url('../img/curso1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/* agregar flex dentro del navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* estilos a los icono para menu hamburguesa */
+
+.iconbar {
+    display: none;
+}
+
+/* dibujar las lineas de las barritas del menu */
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 2.5rem;
+}
+
+.nav-link {
+    font-size: .9rem;
+    font-weight: 600;
+    color: rgb(31, 62, 183);
+}
+
+.nav-link:hover {
+    color: yellow;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+@media (max-width: 768px)
+{
+
+    /* cambiamos la alineacion de los elementos */
+
+    .navbar {
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    /* mantemos oculo el navmenu con la posicion al -100% */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 4rem;
+
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        text-align: center;
+
+        background-color: #1976d2;
+        transition:  all 0.3s ease-in-out;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.07);
+
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+
+    .nav-item {
+        width: 100%;
+        margin: 0 0;
+    }
+
+   /* mostramos el iconos */
+
+   .iconbar {
+    display: block;
+    cursor: pointer;
+   }
+
+   .iconbar.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+
+   }
+
+   .iconbar.active .bar:nth-child(2) {
+    opacity: 0;
+   }
+
+   .iconbar.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+
+   }
+
+
+
+}
+/*
+.container {
+    padding: 2rem;
+    height: 10vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}*/
+
+img {
+width: 300px;
+height: 300px;
+}
