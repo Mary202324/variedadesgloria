@@ -2,6 +2,82 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+    <style>
+
+
+:root {
+            font-size: 16px;
+           /* --fondo-primario: #F4C430;*/
+            --fondo-primario2: #F4C430;
+            --fondo-secundario: #9bbee7;
+            --color-borde: #20d748;
+            --texto-primario: #212121;
+            --linear-1: #5BA69C;
+            --linear-2: #1976D2;
+            --fuente-principal: "Arial", sans-serif;
+        }
+
+
+.btn {
+
+font-family: var(--fuente-principal);
+font-size: 1.8rem;
+
+display: left 0;     
+background: var(--fondo-primario2);
+width: 200px;
+height: 80px;
+margin: 10% auto;
+
+border: 2px solid var(--color-borde);
+
+border-radius: 10px;
+padding: 1rem;
+
+text-align: center;
+box-shadow: -1px 4px 12px -2px rgba(0,0,0,1);
+
+font-weight: 500;
+text-transform: uppercase;
+
+color: white;
+text-decoration: none;
+
+}
+
+
+
+        .btn:hover {
+            background-color: rgba(0, 0, 0, 0.0);
+            border: 2px solid var(--texto-primario);
+            color: var(--texto-primario);
+            cursor: pointer;
+        }
+
+
+        /* aqui termina funcion boton*/
+
+       /*EMPIEZA FLEX*/
+       .flex-container {
+display: flex;
+justify-content: center;
+
+}
+.flex-item {
+background-color: rgb(237, 215, 215);
+width: 100px;
+height: 80px;
+margin: 10px;
+text-align: center;
+line-height: 10px;
+font-size: 15px;
+border-radius: 10px;
+}
+
+
+    </style>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,8 +103,9 @@
 
         <header>
             <div>
-                
+               
                 <p>FOAMI</p>
+               
                 <img src="assetts/foami3.jpg" width="300px" , height="200px">
             </div>
             <p></p>
@@ -69,6 +146,11 @@
     </ul>
     
 </div>
+<BR></BR>
+<BR></BR>
+<a href="index.html" class="btn" > Inicio</a>
+<BR></BR>
+<BR></BR>
 
 <!-- fin de galeria -->
 

@@ -1,7 +1,10 @@
 :root {
     --dark-color: #edacce;
-    --primario-color: #e6e3ad;
-    --secundario-color:#79e7c6;
+    --primario-color: #ea83e2;
+    --secundario-color:#CC5E2E;
+    --tercer-color: #1CA9C8;
+    --cuarto-color: #371F30;
+    --quinto-color: #18CA21 ;
     --texto-color-primario: #212121;
     --texto-color-secundario:#757575;
     --linear-1: #a65b87;
@@ -13,7 +16,8 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to top, var(--primario-color), var(--secundario-color));
+    background: linear-gradient(to top, var(--primario-color), var(--secundario-color), var(--tercer-color), var(--cuarto-color));
+   /* background-image: (url(../assetts/aretes\ resina\ epoxica.jpg));*/
     font-family: 'Poppins', sans-serif;
    
     box-sizing: border-box;

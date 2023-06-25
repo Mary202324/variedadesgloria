@@ -24,6 +24,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     background: linear-gradient(to top, #1976d2, #ddb7d1 );
+   /* background-image: (url(../assetts/aretes\ resina\ epoxica.jpg));*/
     height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
